@@ -1,3 +1,12 @@
-<h1>Svelte</h1>
+<script>
+ let text = ""
 
-<p>Welcome to coding with Svelte!</p>
+</script>
+
+
+<label>
+write something:
+<input type="text" bind:value={text}>
+</label>
+
+<p>you said: {text}</p>
